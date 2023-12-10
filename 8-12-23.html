@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+<li>hi</li>
+<li>virat kohli</li>
+<li>hello</li>
+
+
+    </ul>
+
+    
+
+ 
+ 
+ <script>
+
+ let getel=document.getElementsByTagName("li")
+
+ getel[2]
+
+
+ let licre=document.createElement("li")
+ licre.innerText="rohith"
+
+ let getul=document.getElementsByTagName("ul")
+
+ getul[0].insertBefore(licre,getel[2])
+
+
+
+ let a=["hello","hii","how are you","bye"]
+ for(i=0;i<a.length;i++){
+     let licre=document.createElement("li")
+     licre.innerText=i+" "+a[i]
+     console.log(licre)
+     document.body.append(licre)
+ }
+
+a=["https://media.gettyimages.com/id/1308098673/photo/india-v-england-5th-t20-international.jpg?s=1024x1024&w=gi&k=20&c=OtosIsID11YnmDI2KRCestDugDlTnbhTHGgQPkyc6CE=","https://media.gettyimages.com/id/1336661954/photo/england-v-india-third-lv-insurance-test-match-day-three.jpg?s=1024x1024&w=gi&k=20&c=lC2Ep0edLO5X7wPESCwKwVLPDJcF-uvAAnOajJAbLE0=","https://media.gettyimages.com/id/1124950451/photo/new-zealand-v-india-odi-game-2.jpg?s=1024x1024&w=gi&k=20&c=RT_FV5P-eLJZF4qLIMi6qbS0uQmr1QGq9hHF-A2riIo="]
+
+
+for(i=0;i<5;i++){
+let geting=document.createElement("img")
+geting.setAttribute("src",a[i])
+document.body.append(geting)
+
+}
+    </script>
+</body>
+</html>
